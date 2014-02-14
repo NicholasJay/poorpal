@@ -1,0 +1,11 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: poorpal_development
+  pool: 5
+  username: nicholasbundy
+  host: localhost
+  password:
+
+

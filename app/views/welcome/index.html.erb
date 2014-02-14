@@ -1,0 +1,22 @@
+<% unless @message.nil? %>
+  <div id="errors">
+    <ul>
+      <li><em><%= @message %></em></li>
+    </ul>
+  </div>
+<% end %>
+
+<div id="login">
+<%= form_tag session_path do %> 
+  <%= label_tag :email %>
+  <%= text_field_tag :email%>
+  <%= label_tag :password %>
+  <%= password_field_tag :password%>
+  <%= submit_tag "Login!" %>
+<% end %>
+</div>
+
+<div id="welcome_title">
+<h1> Welcome to PoorPal </h1>
+
+<button><%= link_to "Click Here to Join", controller: "users", action: "new"%></button>

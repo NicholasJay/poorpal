@@ -1,0 +1,39 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+#login {
+  float: right;
+  background: white;
+  border: 2px solid grey;
+  box-shadow: 0 1px 0 1px;
+  padding: 5px;
+}
+
+#formstyle {
+  font-size: 18px;
+}
+form input{
+  background-color: lightblue;
+}
+legend {
+  font-size: 18px;
+}
+fieldset {
+  width: 300px;
+  text-align: right;
+  margin: 0 auto;
+  box-shadow: 1px 2px 1px 2px;
+}
+#join {
+  text-align: center;
+}
