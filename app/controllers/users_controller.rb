@@ -14,7 +14,6 @@ class UsersController < ApplicationController
     else
       render :new
     end
-    binding.pry
     
   end
 
@@ -27,6 +26,13 @@ class UsersController < ApplicationController
   end
 
   def update
+    @changed = @user.update(user_params)
+
+    if @changed
+      redirect_to user_path(@user.id)
+    else
+      render :edit
+    end
   end
 
   def destroy

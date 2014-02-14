@@ -14,7 +14,6 @@ class SessionController < ApplicationController
       redirect_to user_path(user)
     else
       @message = "Invalid Username or Password"
-      render :new
     end 
 
   end
