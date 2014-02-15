@@ -13,7 +13,7 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
       redirect_to user_path(user)
     else
-      @message = "Invalid Username or Password"
+      redirect_to root_path
     end 
 
   end

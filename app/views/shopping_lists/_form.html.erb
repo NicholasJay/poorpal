@@ -1,0 +1,11 @@
+
+<fieldset>
+  <legend>New Shopping List</legend>
+<%= form_for [@user, @shopping_list] do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %><br />
+<%= f.label :date %>
+<%= f.date_field :date %><br />
+<%= f.submit %>
+<% end %>
+</fieldset>

@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+
+      <%= link_to "Log Out", "/session", method: "delete", class: "logout" unless session[:user_id].nil? %>
+
+  </header>
 
 <%= yield %>
 

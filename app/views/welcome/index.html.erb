@@ -1,17 +1,12 @@
-<% unless @message.nil? %>
-  <div id="errors">
-  <em><%= @message %></em>
-  </div>
-<% end %>
 
 <div id="login">
-<%= form_tag session_path do %> 
+  <%= form_tag session_path do%> 
   <%= label_tag :email %>
   <%= text_field_tag :email%>
   <%= label_tag :password %>
   <%= password_field_tag :password%>
   <%= submit_tag "Login!" %>
-<% end %>
+  <% end %>
 </div>
 
 <div id="welcome_title">

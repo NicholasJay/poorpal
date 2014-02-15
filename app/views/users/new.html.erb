@@ -1,7 +1,9 @@
-<% unless @message.nil? %>
-  <div id="errors">
-  <em><%= @message %></em>
-  </div>
+<% unless @user.errors.messages.empty? %>
+    <% @user.errors.messages.each do |field, error| %>
+      <div id="errors">
+      <%= "#{field.capitalize}: #{error.first}" %><br />
+      </div>
+    <% end %>
 <% end %>
 
 <div id="join">
