@@ -1,18 +1,22 @@
 <h1> PoorPal Results </h1>
 <hr></hr>
-<h4> Click Add to put the item into your shopping list </h4>
+
+<h4><%= @message %></h4>
 
 
-<% @items.each do |item| %>
-<%= item[:item]%>: <%= item[:price] %> - <span>Sold by: <%= item[:seller] %></span><br />
+<% @products.each do |item| %>
+<%= item[:item]%>: $<%= item[:price] %> - <span>Sold by: <%= item[:seller] %></span><br />
 
-  <form action= <%= user_shopping_list_products_path(@user.id, @shopping_list.id)%> method="post" >
-  <input name='authenticity_token' type='hidden' value='<%= form_authenticity_token %>' />
-  <input type="hidden" name="name" value="<%=item[:item]%>" />
-  <input type="hidden" name="price" value="<%=item[:price]%>" />
-  <input type="hidden" name="store" value="<%=item[:seller]%>" />
-  <input type="submit" value="Add Item"/><br />
+  <form action="<%= user_shopping_list_products_path(@user.id, @shopping_list.id)%>" method="post" >
+    <input name='authenticity_token' type='hidden' value='<%= form_authenticity_token %>' />
+    <input type="hidden" name="name" value="<%=item[:item]%>" />
+    <input type="hidden" name="price" value="<%=item[:price]%>" />
+    <input type="hidden" name="store" value="<%=item[:seller]%>" />
+    <input type="hidden" name="shopping_list_id" value="<%= @shopping_list.id %>" />
+    <input type="submit" value="Add Item"/x><br />
+  </form>
   <br></br>
+
 
 <% end %>
 

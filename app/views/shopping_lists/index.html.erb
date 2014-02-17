@@ -1,5 +1,8 @@
-<h1> <%= @user.first_name %>'s Shopping Lists </h1>
+<h1><%= @user.first_name %>'s Shopping Lists </h1>
 
+
+<div id="join">
 <% @shopping_lists.each do |list| %>
-<%= link_to "#{list.title}", user_shopping_list_path(@user.id, list.id) %><br />
+<%= link_to "#{list.title}", user_shopping_list_products_path(@user.id, list.id) %>
 <% end %>
+</div>

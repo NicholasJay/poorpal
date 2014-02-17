@@ -8,8 +8,9 @@ body {
 h1 {
   font-family: 'Acme', sans-serif;
   font-style: italic;
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 2px;
+  margin-left: 75px;
 }
 
 
@@ -24,15 +25,8 @@ h1 {
   font-family: 'Acme', sans-serif;
   font-weight: 100;
 }
-.logout {
-  color: white;
-  border: 2px solid slategrey;
-  float: right;
-  margin: -160px auto;
-  background-color: lightblue;
-  padding: 5px;
 
-}
+
 #welcome_title {
   color:#FFCC66;
   background-image: url("joinbackground.jpg");
@@ -43,6 +37,13 @@ h1 {
   height: 150px;
   border-radius: 360px;
   padding: 20px;
+}
+#subtitle {
+  position: absolute;
+  margin-top: -475px;
+  margin-left: 30px;
+  color: royalblue;
+  font-style: italic;
 }
 
 a {

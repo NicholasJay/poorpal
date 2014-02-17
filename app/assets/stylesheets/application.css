@@ -16,33 +16,34 @@
 span {
   color: blue;
 }
+
 h1 {
   font-family: 'Acme', sans-serif;
   font-style: italic;
   font-size: 40px;
   letter-spacing: 2px;
+  text-align: center;
+}
+h2 {
+  font-size: 40px;
+  font-style: italic;
+  font-family: 'Acme', sans-serif;
 }
 
-/*#login {
-  float: left;
-  color: #0066CC;
-  background: lightblue;
-  border: 2px solid grey;
-  padding: 5px;
-  margin-top: -170px;
-  border-radius: 10px;
-  font-family: 'Acme', sans-serif;
-  font-weight: 100;
-}*/
+li {
+  margin: 0 auto;
+  width: 500px;
+}
+
 .logout {
   color: white;
   border: 2px solid slategrey;
   float: right;
-  margin: -160px auto;
   background-color: lightblue;
   padding: 5px;
 
 }
+
 #welcome_title {
   color:#FFCC66;
   background-image: url("joinbackground.jpg");

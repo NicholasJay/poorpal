@@ -2,6 +2,7 @@ class ShoppingListsController < ApplicationController
   before_action :load_user
   before_action :load_shopping_list, only: [:edit, :show, :destroy, :update]
 
+
   def index
     @shopping_lists = ShoppingList.all
   end
@@ -29,6 +30,7 @@ class ShoppingListsController < ApplicationController
   end
 
   def show
+    @products = Product.all
     render :show
   end
 
@@ -58,6 +60,8 @@ private
   def load_shopping_list
     @shopping_list = @user.shopping_lists.find(params[:id])
   end
+
+
 
   def shopping_params
   params.require(:shopping_list).permit(:title, :date)
