@@ -1,4 +1,8 @@
-
+<!DOCTYPE html>
+<html>
+  <%= stylesheet_link_tag 'welcome' %>
+<head>
+</head>
 <div id="login">
   <%= form_tag session_path do%> 
   <%= label_tag :email %>
@@ -10,6 +14,9 @@
 </div>
 
 <div id="welcome_title">
-<h1> Welcome to PoorPal </h1>
+<h1> PoorPal </h1>
 
-<button><%= link_to "Click Here to Join", controller: "users", action: "new"%></button>
+<button><%= link_to "Sign Up", controller: "users", action: "new"%></button>
+</div>
+
+</html>

@@ -4,8 +4,6 @@ class CreateProducts < ActiveRecord::Migration
       t.string :name
       t.integer :price
       t.string :store
-      t.string :store_location
-      t.integer :size
       t.integer :shopping_list_id
     end
   end

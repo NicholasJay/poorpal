@@ -20,6 +20,10 @@ class ShoppingListsController < ApplicationController
     end
   end
 
+  def search
+    render :search
+  end
+
   def edit
     render :edit
   end

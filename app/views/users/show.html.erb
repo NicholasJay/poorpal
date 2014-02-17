@@ -1,5 +1,12 @@
-<h1> Welcome to your Poorpal Account <%= @user.first_name %> </h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag 'users' %>
+</head>
+<h1> <%= @user.first_name %>'s PoorPal</h1>
 
-<%= link_to "Profile Information", edit_user_path %>
-<%= link_to "View Shopping Lists", user_shopping_lists_path(@user.id) %>
-<%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %>
+<%= link_to "Profile Information", edit_user_path %><br />
+<%= link_to "View Shopping Lists", user_shopping_lists_path(@user.id) %><br />
+<%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %><br />
+
+</html>

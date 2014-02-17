@@ -1,0 +1,6 @@
+body {
+  background-image: url("welcome_image.jpg");
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: right;
+}

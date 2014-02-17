@@ -1,21 +1,10 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
-
-
-span {
-  color: blue;
+body {
+  background-image: url("welcome_image.jpg");
+  background-repeat: no-repeat;
+  background-size: 1100px;
+  background-position: right;
 }
+
 h1 {
   font-family: 'Acme', sans-serif;
   font-style: italic;
@@ -23,17 +12,18 @@ h1 {
   letter-spacing: 2px;
 }
 
-/*#login {
+
+#login {
   float: left;
   color: #0066CC;
   background: lightblue;
-  border: 2px solid grey;
+  border: 4px double white;
   padding: 5px;
   margin-top: -170px;
   border-radius: 10px;
   font-family: 'Acme', sans-serif;
   font-weight: 100;
-}*/
+}
 .logout {
   color: white;
   border: 2px solid slategrey;
@@ -49,11 +39,12 @@ h1 {
   margin: 175px 620px;
   text-align: center;
   border: 4px double white;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 360px;
   padding: 20px;
 }
+
 a {
   color:#0066CC;
   font-family: 'Acme', sans-serif;
@@ -62,13 +53,16 @@ a {
 button {
   background-color: lightblue;
   border-radius: 30px;
-  font-size: 15px;
+  font-size: 13px;
+}
+
+#loginerror {
+  margin-top: 400px
 }
 
 #formstyle {
   font-size: 18px;
 }
-
 form input{
   background-color: lightblue;
   width: 150px;
