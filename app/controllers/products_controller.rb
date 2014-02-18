@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = @shopping_list.products.all
+    organize_stores
     render :index
   end
 
@@ -95,6 +96,12 @@ def send_text_message
       :body => "#{@final.compact.join("\n\n")}"
     )
 end
+
+  def organize_stores
+    @stores = []
+    @products.each {|store| @stores << store[:store]}
+    @stores.uniq!
+  end
 
   def product_params
     params.require(:product).permit(:name, :price, :store, :shopping_list_id)

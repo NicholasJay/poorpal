@@ -46,6 +46,7 @@ header {
   color: #0066CC;
   background: lightblue;
   padding: 5px;
+  margin-top: 1px;
   border-radius: 10px;
   font-family: 'Acme', sans-serif;
   font-weight: 100;
@@ -66,7 +67,8 @@ span {
   color:#FFCC66;
   background-image: url("joinbackground.jpg");
   padding: 5px;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 10px;
   margin-left: 10px;
   font-style: italic;
   letter-spacing: 2px;
