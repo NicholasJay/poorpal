@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
   API_KEY = ENV["SEMANTICS_KEY"]
   API_SECRET = ENV["SEMANTICS_SECRET"]
+  TWIL_ID = ENV["TWIL_SID"]
+  TWIL_AUTH = ENV["TWIL_AUTH"]
 
   before_action :load_user
   before_action :load_shopping_list
@@ -10,8 +12,13 @@ class ProductsController < ApplicationController
     render :index
   end
 
+  def sendtext
+    send_text_message
+    render :sendtext
+  end
+
   def new
-    @product = Product.new
+    send_text_message
   end
 
   def show
@@ -72,6 +79,22 @@ private
 
     return items
   end
+
+def send_text_message
+    @list = @shopping_list.products.all
+    @final = @list.map {|item| item.name}
+
+    twilio_sid = "ACdabae95b9c28c792f3ec942e69dfe3ae"
+    twilio_token = "846db6454ab8b224d14d45bad60ece64"
+ 
+    @twilio_client = Twilio::REST::Client.new twilio_sid, twilio_token
+ 
+    @twilio_client.account.sms.messages.create(
+      :from => "+17472013048",
+      :to => "+18184473005",
+      :body => "#{@final.each {|item| item}}"
+    )
+end
 
   def product_params
     params.require(:product).permit(:name, :price, :store, :shopping_list_id)

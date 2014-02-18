@@ -36,6 +36,8 @@ gem 'httparty'
 
 gem 'semantics3'
 
+gem 'twilio-ruby'
+
 gem 'rails_12factor', group: :production
 
 gem 'pry-rails', group: [:development, :test]

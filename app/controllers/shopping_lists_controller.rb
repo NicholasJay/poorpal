@@ -1,4 +1,7 @@
 class ShoppingListsController < ApplicationController
+  TWIL_ID = ENV["TWIL_SID"]
+  TWIL_AUTH = ENV["TWIL_AUTH"]
+
   before_action :load_user
   before_action :load_shopping_list, only: [:edit, :show, :destroy, :update]
 
@@ -48,6 +51,9 @@ class ShoppingListsController < ApplicationController
   end
 
   def destroy
+    @list = ShoppingList.find(params[:id])
+    @list.destroy
+    redirect_to user_shopping_lists_path
   end
 
 
@@ -62,8 +68,6 @@ private
   def load_shopping_list
     @shopping_list = @user.shopping_lists.find(params[:id])
   end
-
-
 
   def shopping_params
     params.require(:shopping_list).permit(:title, :date)
