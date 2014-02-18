@@ -1,17 +1,22 @@
 <div id="join">
-<h1> <%= @shopping_list.title%> Shopping List </h1>
 
-<form method="GET" action="products/show" />
-  <label for="search_input">Search Products:</label>
-  <input type="text" name="search_input" id="search_input_field" />
-  <input type="submit" />
-</form>
+  <h1> <%= @shopping_list.title%> Shopping List </h1>
+  <hr></hr>
+
+  <form method="GET" action="products/show" />
+    <label for="search_input">Search Products:</label>
+    <input type="text" name="search_input" id="search_input_field" />
+    <input type="submit" />
+  </form>
+
 </div>
 
-<ul>
+<hr></hr>
+</br>
 
+<ul>
 <% @products.each do |item| %>
-  <li><%= item.name %>    
+  <li><%= item.name %> - $<%= item.price %> 
     <form action="<%= user_shopping_list_product_path(@user.id, @shopping_list.id, item.id) %>" method="POST" >
       <input type="hidden" name="_method" value="DELETE" />
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />

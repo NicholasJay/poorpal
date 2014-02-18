@@ -14,11 +14,13 @@ class ShoppingListsController < ApplicationController
   def create
     @shopping_list = ShoppingList.create(shopping_params)
     @shopping_list.user = @user
+
     if @shopping_list.save
       redirect_to user_shopping_lists_path
     else
       render :new
     end
+
   end
 
   def search
@@ -64,7 +66,7 @@ private
 
 
   def shopping_params
-  params.require(:shopping_list).permit(:title, :date)
+    params.require(:shopping_list).permit(:title, :date)
   end
 
 

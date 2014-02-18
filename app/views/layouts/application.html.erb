@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Poorpal</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
@@ -7,12 +8,15 @@
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
   <header>
       <%= link_to "Log Out", "/session", method: "delete", class: "logout" unless session[:user_id].nil? %>
+      <%= link_to "Shopping Lists", user_shopping_lists_path(current_user.id), class: "logout" %>
+      <%= link_to "Home", user_path(current_user.id), class: "logout" %>
   </header>
-
+  
 <%= yield %>
-
 </body>
+
 </html>

@@ -1,8 +1,9 @@
 <h1> PoorPal Results </h1>
 <hr></hr>
 
+<div id="join">
 <h4><%= @message %></h4>
-
+</div>
 
 <% @products.each do |item| %>
 <%= item[:item]%>: $<%= item[:price] %> - <span>Sold by: <%= item[:seller] %></span><br />

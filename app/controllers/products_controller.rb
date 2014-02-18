@@ -16,21 +16,25 @@ class ProductsController < ApplicationController
 
   def show
     @products = product_find(params[:search_input])
-    @products.sort_by! {|item| item[:price].to_i}
+    @products.sort_by! {|item| item[:price].to_f}
+
     if @products.empty?
       @message = "Product Not Found"
     else
       @message = "Click Add to put item in your shopping list"
     end
+
   end
 
   def create
     @product = Product.create(name: params[:name], price: params[:price], store: params[:store], shopping_list_id: params[:shopping_list_id])
+    
     if @product
       redirect_to user_shopping_list_products_path(@user.id, @shopping_list.id)
     else
       redirect_to :new
     end
+  
   end
 
   def destroy
@@ -67,7 +71,6 @@ private
       end
 
     return items
-  
   end
 
   def product_params
