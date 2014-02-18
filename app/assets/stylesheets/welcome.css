@@ -13,7 +13,6 @@ h1 {
   margin-left: 275px;
 }
 
-
 #login {
   float: left;
   color: #0066CC;
@@ -54,7 +53,7 @@ a {
 button {
   background-color: lightblue;
   border-radius: 30px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #loginerror {
@@ -76,9 +75,10 @@ legend {
   text-align: left;
 }
 fieldset {
-  width: 300px;
+  width: 350px;
   text-align: right;
   margin: 0 auto;
+  background-color: skyblue;
 
 }
 #join {

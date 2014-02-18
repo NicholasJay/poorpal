@@ -4,7 +4,7 @@ class ShoppingListsController < ApplicationController
 
 
   def index
-    @shopping_lists = ShoppingList.all
+    @shopping_lists = @user.shopping_lists.all
   end
 
   def new
