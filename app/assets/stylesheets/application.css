@@ -12,6 +12,34 @@
  *= require_tree .
  */
 
+body {
+  background-image: url("welcome_image.jpg");
+  background-size: cover;
+  background-position: 0 -200px;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+
+}
+
+#login {
+  float: left;
+  color: #0066CC;
+  background: lightblue;
+  border: 4px double white;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Acme', sans-serif;
+  font-weight: 100;
+}
+
+#links {
+  position: relative;
+  float: right;
+}
 
 span {
   color: blue;
@@ -21,6 +49,7 @@ h1 {
   font-family: 'Acme', sans-serif;
   font-style: italic;
   font-size: 40px;
+  color: #003399;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -48,7 +77,7 @@ li {
 #welcome_title {
   color:#FFCC66;
   background-image: url("joinbackground.jpg");
-  margin: 175px 620px;
+  margin: 175px 520px;
   text-align: center;
   border: 4px double white;
   width: 180px;
@@ -88,6 +117,16 @@ fieldset {
   margin: 0 auto;
 
 }
+
+#subtitle {
+  position: absolute;
+  margin-top: -475px;
+  margin-left: 30px;
+  color: royalblue;
+  font-style: italic;
+}
+
+
 #join {
   text-align: center;
 }

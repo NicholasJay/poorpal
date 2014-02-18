@@ -36,6 +36,8 @@ gem 'httparty'
 
 gem 'semantics3'
 
+gem 'rails_12factor', group: :production
+
 gem 'pry-rails', group: [:development, :test]
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
@@ -48,3 +50,5 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+ruby '2.1.0'

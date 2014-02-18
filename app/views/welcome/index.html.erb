@@ -2,7 +2,7 @@
 <html>
   <%= stylesheet_link_tag 'welcome' %>
 
-<body>
+<header>
 <div id="login">
   <%= form_tag session_path do%> 
   <%= label_tag :email %>
@@ -12,6 +12,7 @@
   <%= submit_tag "Login!" %>
   <% end %>
 </div>
+</header>
 
 <div id="welcome_title">
 
@@ -22,7 +23,8 @@
 
 <div id="subtitle">
 
-  <h3> ...a shopping companion for the Price Savvy </h3>
+  <h3> ...a shopping companion</h3>
+  <h3>for the Price Savvy </h3>
   <h3> Penny Pincher! </h3>
 
 </div>
