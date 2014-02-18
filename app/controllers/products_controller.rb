@@ -85,6 +85,7 @@ def send_text_message
     @list = @shopping_list.products.all
     @final = @list.map {|item| item.name}
 
+
     twilio_sid = "ACdabae95b9c28c792f3ec942e69dfe3ae"
     twilio_token = "846db6454ab8b224d14d45bad60ece64"
  

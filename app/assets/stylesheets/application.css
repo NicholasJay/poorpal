@@ -36,7 +36,7 @@ header {
   width: 525px;
   border-radius: 5px;
   border: 2px solid slategrey;
-  padding: 1px;
+  padding: 10px;
   box-shadow: inset 0px 0px 277px 3px #B3B3B3;
 }
 
@@ -172,6 +172,9 @@ fieldset {
 }
 #userpage {
   margin-top: 100px;
+}
+.products button{
+  width: 50px;
 }
 
 #join {
