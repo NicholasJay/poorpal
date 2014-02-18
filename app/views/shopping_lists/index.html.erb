@@ -1,6 +1,9 @@
 
 <h1><%= @user.first_name %>'s Shopping Lists </h1>
 <hr></hr>
+<div class="newlist">
+<h3><%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %></h3>
+</div>
 
 <% @shopping_lists.each do |list| %>
 <div id="join">

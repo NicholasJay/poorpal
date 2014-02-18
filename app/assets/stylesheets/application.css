@@ -17,19 +17,34 @@ body {
   background-size: cover;
   background-position: 0 -200px;
 }
+hr {
+  width: 525px;
+}
 
 header {
-  width: 100%;
+  margin-left: -8px;
+  width: 100%;  
   position: absolute;
   top: 0;
+  background-color: lightblue;
+  height: 45px;
+  border-bottom: 2px solid slategrey;
 
 }
+.products {
+  margin: 0 auto;
+  width: 525px;
+  border-radius: 5px;
+  border: 2px solid slategrey;
+  padding: 1px;
+  box-shadow: inset 0px 0px 277px 3px #B3B3B3;
+}
+
 
 #login {
   float: left;
   color: #0066CC;
   background: lightblue;
-  border: 4px double white;
   padding: 5px;
   border-radius: 10px;
   font-family: 'Acme', sans-serif;
@@ -39,13 +54,36 @@ header {
 #links {
   position: relative;
   float: right;
+  top: 3px;
+  right: 10px;
 }
 
 span {
   color: blue;
 }
+.logo {
+  font-size: 25px;
+  color:#FFCC66;
+  background-image: url("joinbackground.jpg");
+  padding: 5px;
+  border: 1px solid white;
+  margin-left: 10px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.newlist {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 277px 3px #B3B3B3;
+
+}
 
 h1 {
+  position: relative;
+  top: 25px;
   font-family: 'Acme', sans-serif;
   font-style: italic;
   font-size: 40px;
@@ -54,9 +92,10 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-style: italic;
   font-family: 'Acme', sans-serif;
+
 }
 
 li {
@@ -77,7 +116,7 @@ li {
 #welcome_title {
   color:#FFCC66;
   background-image: url("joinbackground.jpg");
-  margin: 175px 520px;
+  margin: 155px 520px;
   text-align: center;
   border: 4px double white;
   width: 180px;
@@ -85,6 +124,11 @@ li {
   border-radius: 360px;
   padding: 20px;
 }
+#welcome_title h2 {
+  margin-top: 55px;
+  margin-left: -10px;
+}
+
 a {
   color:#0066CC;
   font-family: 'Acme', sans-serif;
@@ -92,8 +136,10 @@ a {
 }
 button {
   background-color: lightblue;
-  border-radius: 30px;
-  font-size: 15px;
+  border-radius: 5px;
+  color: red;
+  width: 100px;
+  font-size: 12px;
 }
 
 #formstyle {
@@ -107,10 +153,7 @@ form input{
   color: #0066CC;
   font-size: 15px;
 }
-legend {
-  font-size: 15;
-  text-align: left;
-}
+
 fieldset {
   width: 400px;
   text-align: right;
@@ -125,7 +168,9 @@ fieldset {
   color: royalblue;
   font-style: italic;
 }
-
+#userpage {
+  margin-top: 100px;
+}
 
 #join {
   text-align: center;

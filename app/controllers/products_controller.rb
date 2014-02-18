@@ -91,8 +91,8 @@ def send_text_message
  
     @twilio_client.account.sms.messages.create(
       :from => "+17472013048",
-      :to => "+18184473005",
-      :body => "#{@final.each {|item| item}}"
+      :to => "+1#{@user.phone_number}",
+      :body => "#{@final.compact.join("\n\n")}"
     )
 end
 

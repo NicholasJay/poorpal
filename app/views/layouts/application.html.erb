@@ -11,6 +11,10 @@
 
 <body>
   <header>
+    <div id="login">
+      <%= link_to "PoorPal", user_path(current_user.id), class: "logo" unless session["user_id"].nil? %>
+    </div>
+
     <div id="links">
       <%= link_to "Log Out", "/session", method: "delete", class: "logout" unless session[:user_id].nil? %>
       <%= link_to "Shopping Lists", user_shopping_lists_path(current_user.id), class: "logout" unless session[:user_id].nil? %>
