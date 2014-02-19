@@ -1,10 +1,14 @@
+<div id="errors">
 <% unless @user.errors.messages.empty? %>
     <% @user.errors.messages.each do |field, error| %>
-      <div id="errors">
       <%= "#{field.capitalize}: #{error.first}" %><br />
-      </div>
     <% end %>
 <% end %>
+
+<% unless @message.nil? %>
+<%= @message %>
+<% end %>
+</div>
 
 <div id="join">
   

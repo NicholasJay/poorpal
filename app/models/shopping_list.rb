@@ -3,5 +3,4 @@ class ShoppingList < ActiveRecord::Base
   belongs_to :user
 
   validates :title, presence: true, uniqueness: true
-  validates :date, presence: true
 end
