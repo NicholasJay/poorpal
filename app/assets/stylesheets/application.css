@@ -87,7 +87,9 @@ span {
 h1 {
   position: relative;
   top: 25px;
-  font-family: 'Oregano', cursive;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  font-style: italic;
   font-size: 40px;
   color: #004488;
   letter-spacing: 2px;
