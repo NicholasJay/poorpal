@@ -18,7 +18,7 @@
 * Twilio
 
 #####Here is my ERD for the project
-![ScreenShot](erd.jpg)
+![ScreenShot](erd.JPG)
 
 A list of this applications User Stories can be found [Here](https://www.pivotaltracker.com/s/projects/1015672)
 
