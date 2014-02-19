@@ -12,6 +12,7 @@
  *= require_tree .
  */
 
+
 body {
   background-image: url("welcome_image.jpg");
   background-size: cover;
@@ -85,12 +86,12 @@ span {
 h1 {
   position: relative;
   top: 25px;
-  font-family: 'Acme', sans-serif;
-  font-style: italic;
+  font-family: 'Oregano', cursive;
   font-size: 40px;
-  color: #003399;
+  color: #004488;
   letter-spacing: 2px;
   text-align: center;
+  text-shadow: 0 0 10px lightgrey;
 }
 h2 {
   font-size: 50px;
