@@ -9,12 +9,16 @@
 * You can create new Shopping Lists
 * Items can be added to the shopping list as you receive the cheapest result
 * Items will automatically be organized for you by store
-* Shopping lists can be sent to any email, or pushed to your phone via text messages
+* Shopping lists can be pushed to your phone via text messages
 
 ##### API's
 * Semantics3
+  A great API with over 2 billion products and prices that are continuosly updated!
+
 * Twilio
 
+#####Here is my ERD for the project
+![ScreenShot](erd.jpg)
 
 A list of this applications User Stories can be found [Here](https://www.pivotaltracker.com/s/projects/1015672)
 
