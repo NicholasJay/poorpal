@@ -82,8 +82,25 @@ private
   end
 
 def send_text_message
+    @products = @shopping_list.products.all
     @list = @shopping_list.products.all
     @final = @list.map {|item| item.name}
+
+    @allinfo = []
+
+    organize_stores
+    def organized
+      @stores.each do |store|
+        @products.each do |item|
+          if item.store == store
+            @allinfo << store
+            @allinfo << item.name
+          end
+        end
+      end
+    end
+    organized
+
 
 
     twilio_sid = "ACdabae95b9c28c792f3ec942e69dfe3ae"
@@ -94,7 +111,7 @@ def send_text_message
     @twilio_client.account.sms.messages.create(
       :from => "+17472013048",
       :to => "+1#{@user.phone_number}",
-      :body => "#{@final.compact.join("\n\n")}"
+      :body => "#{@allinfo}"
     )
 end
 
