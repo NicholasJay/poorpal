@@ -65,13 +65,12 @@ span {
 .logo {
   font-size: 25px;
   color:#FFCC66;
-  background-image: url("joinbackground.jpg");
   padding: 5px;
-  border: 2px solid white;
   border-radius: 10px;
   margin-left: 10px;
   font-style: italic;
   letter-spacing: 2px;
+  text-shadow: 0 0 10px blue;
 }
 
 .newlist {
