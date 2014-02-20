@@ -103,8 +103,8 @@ def send_text_message
 
 
 
-    twilio_sid = "ACdabae95b9c28c792f3ec942e69dfe3ae"
-    twilio_token = "846db6454ab8b224d14d45bad60ece64"
+    twilio_sid = TWIL_ID
+    twilio_token = TWIL_AUTH
  
     @twilio_client = Twilio::REST::Client.new twilio_sid, twilio_token
  
