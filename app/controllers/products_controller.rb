@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
   before_action :load_user
   before_action :load_shopping_list
 
-  def index
+   def index
     @products = @shopping_list.products.all
     organize_stores
     render :index
