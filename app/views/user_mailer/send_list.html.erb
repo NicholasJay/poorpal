@@ -1,0 +1,11 @@
+
+  <% @stores.each do |store| %>
+  <h3><u><%= store %></h3></u>
+
+    <% @products.each do |item| %>
+      <% if item.store == store %>
+        <p><%= item.name %> - $<%= item.price %></p>
+      <% end %>
+    <% end %>
+    
+  <% end %>

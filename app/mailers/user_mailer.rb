@@ -1,22 +1,13 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "poorpalweb@gmail.com"
 
 
-  def send_list
-    @user = User.find(params[:user_id])
-    @shopping_list = ShoppingList.find(params[:shopping_list_id])
-    @products = @shopping_list.products.all
-
-    organize_stores
-
-    @url = new_user_shopping_list_product_path(@user.id, @shopping_list.id)
+  def send_list(user, shopping_list, products, stores)
+    @user = user
+    @shopping_list = shopping_list
+    @products = products
+    @stores = stores
     mail(to: @user.email, subject: "Your Shopping List")
-  end
-
-  def organize_stores
-      @stores = []
-      @products.each {|store| @stores << store[:store]}
-      @stores.uniq!
   end
 
 end

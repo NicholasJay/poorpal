@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   TWIL_ID = ENV["TWIL_SID"]
   TWIL_AUTH = ENV["TWIL_AUTH"]
 
+
   before_action :load_user
   before_action :load_shopping_list
 

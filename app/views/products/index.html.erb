@@ -34,6 +34,7 @@
   <% end %>
 
 </div>
+<a href="/users/<%= @user.id%>/shopping_lists/<%=@shopping_list.id%>"><% UserMailer.send_list(@user, @shopping_list, @products, @stores).deliver %>Send List to Email</a>
 
 <div id="join">
 <a href="<%= new_user_shopping_list_product_path(@user.id, @shopping_list.id) %>">Send to Phone</a>
