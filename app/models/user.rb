@@ -6,4 +6,9 @@ class User < ActiveRecord::Base
   validates :phone_number, presence: true
   validates :zipcode, presence: true
   self.has_secure_password()
+
+  def is_admin?
+    email == "nicholasjaynovak@gmail.com"
+  end
+
 end

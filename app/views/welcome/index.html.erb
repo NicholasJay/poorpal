@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html>
+<body>
+    <header>
+      <div id="login">
+        <%= form_tag session_path do%> 
+        <%= label_tag "email: " %>
+        <%= text_field_tag :email%>
+        <%= label_tag "password: " %>
+        <%= password_field_tag :password%>
+        <%= submit_tag "Login!" %>
+        <% end %>
+      </div>
 
-<header>
-<div id="login">
-  <%= form_tag session_path do%> 
-  <%= label_tag :email %>
-  <%= text_field_tag :email%>
-  <%= label_tag :password %>
-  <%= password_field_tag :password%>
-  <%= submit_tag "Login!" %>
-  <% end %>
-</div>
-<p><em> not a member? <%=link_to "Sign Up", controller: "users", action: "new"%></p>
-</header>
+      <div class="bar_right">
+        <p><em> not a member? </em><%=link_to "Sign Up", controller: "users", action: "new"%></p>
+      </div>
+    </header>
 
+  <div id="splashpage">
+    <div id="welcome_title">
+      <h1> PoorPal</h1>
+    </div>
+    
+    <div id="preview-container">
+      <div class="preview-box1">
+      <p>Search for the Cheapest Items</p>
+      </div>
 
+      <div class="preview-box2">
+        <p>Make a Shopping List</p>
+      </div>
 
-<div id="welcome_title">
-  <h2> PoorPal</h2>
-</div>
+      <div class="preview-box3">
+        <p>Text or Email List</p>
+      </div>
+    </div>
 
-<div id="subtitle">
+    <div id="subtitle">
 
-  <h3> ...a shopping companion</h3>
-  <h3>for the Price Savvy </h3>
-  <h3> Penny Pincher! </h3>
+      <div class="phrase">
+        <h3> ...it's money back in your pocket</h3>
+      </div>
 
-</div>
+      <div class="phrase_photo">
+      </div>
 
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li>&copy; poorpal.com</li>
+    </ul>
+  </footer>
 </body>
 </html>

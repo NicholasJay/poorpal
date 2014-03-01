@@ -1,1 +1,2 @@
 <h1> Message Emailed! </h1>
+<% UserMailer.send_list(@user, @shopping_list, @products, @stores).deliver %>
