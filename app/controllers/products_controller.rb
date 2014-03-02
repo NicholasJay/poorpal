@@ -29,8 +29,6 @@ class ProductsController < ApplicationController
 
     if @products.empty?
       @message = "Product Not Found"
-    else
-      @message = "Click Add to put item in your shopping list"
     end
 
   end

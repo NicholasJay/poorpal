@@ -5,11 +5,11 @@
 
 ##### An application that allows you to search for cheap products and organize them by the stores where they are cheapest!
 
-* You can search for the cheapest product (i.e. Crest toothpaste) and get the store with the cheapest price
-* You can create new Shopping Lists
-* Items can be added to the shopping list as you receive the cheapest result
+* You can search for any product (i.e. Crest toothpaste) and get the store with the cheapest price
+* You can create new Shopping Lists and add those products to the lists
 * Items will automatically be organized for you by store
 * Shopping lists can be pushed to your phone via text messages
+* You can send any of your lists to you email
 
 ##### API's
 * Semantics3
