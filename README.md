@@ -9,7 +9,7 @@
 * You can create new Shopping Lists and add those products to the lists
 * Items will automatically be organized for you by store
 * Shopping lists can be pushed to your phone via text messages
-* You can send any of your lists to you email
+* You can send any of your lists to your email
 
 ##### API's
 * Semantics3
