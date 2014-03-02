@@ -35,7 +35,8 @@ class ShoppingListsController < ApplicationController
   end
 
   def show
-    @products = Product.all
+    @products = @shopping_list.products.all
+    organize_stores
     render :show
   end
 
@@ -67,6 +68,12 @@ private
 
   def load_shopping_list
     @shopping_list = @user.shopping_lists.find(params[:id])
+  end
+
+  def organize_stores
+    @stores = []
+    @products.each {|store| @stores << store[:store]}
+    @stores.uniq!
   end
 
   def shopping_params

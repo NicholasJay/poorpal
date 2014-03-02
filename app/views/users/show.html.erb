@@ -9,7 +9,7 @@
     <% if current_user.is_admin? %>
     <h3><%= link_to "View All Users", users_path %></h3>
     <% end %>
-    <h3><%= link_to "Profile Information", edit_user_path %></h3>
+    <h3><%= link_to "Update Profile Information", edit_user_path %></h3>
     <h3><%= link_to "View Shopping Lists", user_shopping_lists_path(@user.id) %></h3>
     <h3><%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %></h3>
   </div>

@@ -59,6 +59,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'capybara-email'
   gem 'launchy'
   gem 'factory_girl_rails'
   gem 'ffaker'

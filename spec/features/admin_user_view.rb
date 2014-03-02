@@ -38,7 +38,6 @@ describe "an admin can view/delete all users" do
   it "cannot be seen by another user" do 
     login(user_one)
     visit user_path(user_one.id)
-    save_and_open_page
     expect(page).to_not have_content('View All Users')
 
   # I then want to log out of the admin user and
@@ -50,8 +49,8 @@ describe "an admin can view/delete all users" do
   # to my user page as that user instead of going to a page
   # that shows all of the users if I try to sneak into the all users page
   it "will redirect me back to my user page" do 
-  
-    visit 
+    login(user_two)
+    visit users_path
   end
 
 
