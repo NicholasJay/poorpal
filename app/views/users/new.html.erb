@@ -1,20 +1,26 @@
 <div id="errors">
-<% unless @user.errors.messages.empty? %>
-    <% @user.errors.messages.each do |field, error| %>
-      <%= "#{field.capitalize}: #{error.first}" %><br />
-    <% end %>
-<% end %>
+  <% unless @user.errors.messages.empty? %>
+  <% @user.errors.messages.each do |field, error| %>
+  <%= "#{field.capitalize}: #{error.first}" %><br />
+  <% end %>
+  <% end %>
 
-<% unless @message.nil? %>
-<%= @message %>
-<% end %>
+  <% unless @message.nil? %>
+  <%= @message %>
+  <% end %>
 </div>
 
-<div id="join">
-  
+<div id="join-container">
+<div id="join">  
   <h1> Join PoorPal</h1>
-  <hr></hr>
-  <%= render "form" %>
-
 </div>
 
+<div id="joinform">
+    <h4> It's Free!!</h4>
+  <%= render "form" %>
+</div>
+
+<div id="joinphrase">
+  <h4>...we'll put money back in your pocket</h4>
+</div>
+</div>

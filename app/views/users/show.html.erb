@@ -2,16 +2,18 @@
 <html>
 
 
-<div id="join">
-  <h1><%= @user.first_name %>'s PoorPal</h1>
+<div id="user-container">
+  <h1><%= @user.first_name %>'s PoorPal Account</h1>
   <hr></hr>
   <div class="userpage">
+    <ul>
     <% if current_user.is_admin? %>
-    <h3><%= link_to "View All Users", users_path %></h3>
+    <li><%= link_to "View All Users", users_path %></li>
     <% end %>
-    <h3><%= link_to "Update Profile Information", edit_user_path %></h3>
-    <h3><%= link_to "View Shopping Lists", user_shopping_lists_path(@user.id) %></h3>
-    <h3><%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %></h3>
+    <li><%= link_to "Update Profile Information", edit_user_path %></li>
+    <li><%= link_to "View Shopping Lists", user_shopping_lists_path(@user.id) %></li>
+    <li><%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %></li>
+  </ul>
   </div>
 </div>
 
