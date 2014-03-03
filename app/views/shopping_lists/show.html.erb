@@ -1,2 +1,4 @@
+<div id="user-container">
 <h1> Message Emailed! </h1>
+</div>
 <% UserMailer.send_list(@user, @shopping_list, @products, @stores).deliver %>

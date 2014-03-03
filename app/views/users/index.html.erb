@@ -1,7 +1,10 @@
+<div id="user-container">
 <h1> All Users! </h1>
-<h3> I hope you are the admin if you are on this page!!! </h3>
+</div>
+<div class="userpage">
 <% @users.each do |user| %>
 <ul>
   <li><%= user.first_name %> <%= user.last_name %>  |  <%= user.email %></li>
 </ul>
 <% end %>
+</div>

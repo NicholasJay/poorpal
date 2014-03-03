@@ -17,13 +17,53 @@ header {
   width: 450px;
   display: inline-block;
   padding-left: 1em;
+  margin-top: 2px;
   padding-bottom: 8px;
+}
+#login a {
+  text-decoration: none;
 }
 
 .bar_right {
   display: inline;
   float: right;
   padding-right: 1em;
+}
+
+#searchbar {
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  padding-top: 2px;
+  letter-spacing: 1px;
+}
+
+.message a {
+  color: black;
+}
+
+.message ul li{
+  width: 200px;
+  margin: 10px auto;
+  background-color: lightgrey;
+  border-radius: 10px;
+  list-style-type: none;
+}
+
+#products {
+  margin: 0 auto;
+  width: 525px;
+  border-radius: 5px;
+  border: 2px solid slategrey;
+  padding: 10px;
+  box-shadow: inset 0px 0px 277px 3px #B3B3B3;
+}
+
+.newlist {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .bar_right a{
@@ -35,6 +75,17 @@ header {
   margin: 0 auto;
   box-shadow: inset 0px 0px 300px 100px lightgrey;
   border-radius: 20px;
+}
+
+#links {
+  float: right;
+  padding-right: 20px;
+  padding-top: 2px;
+  letter-spacing: 1px;
+}
+
+#links a {
+  text-decoration: none;
 }
 
 #welcome_title {
@@ -135,7 +186,7 @@ background-image: linear-gradient(to bottom, #91B3C2 63%, #AED7E9 100%);
 
 .userpage {
   margin: 40px auto;
-  width: 500px;
+  width: 400px;
 }
 
 .userpage ul li a{

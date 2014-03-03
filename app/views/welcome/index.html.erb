@@ -2,6 +2,7 @@
 <html>
 <body>
     <header>
+      <% if session[:user_id].nil? %>
       <div id="login">
         <%= form_tag session_path do%> 
         <%= label_tag "email: " %>
@@ -15,6 +16,7 @@
       <div class="bar_right">
         <p><em> not a member? </em><%=link_to "Sign Up", controller: "users", action: "new"%></p>
       </div>
+      <% end %>
     </header>
 
   <div id="splashpage">
