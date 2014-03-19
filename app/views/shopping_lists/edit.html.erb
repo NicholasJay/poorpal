@@ -1,0 +1,14 @@
+<div id="errors">
+<% unless @shopping_list.errors.messages.empty? %>
+    <% @shopping_list.errors.messages.each do |field, error| %>
+      <%= "#{field.capitalize}: #{error.first}" %><br />
+    <% end %>
+<% end %>
+</div>
+
+<div id="joinform">
+
+  <h1> Edit List </h1>
+  <%= render "form" %>
+
+</div>

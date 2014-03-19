@@ -26,18 +26,8 @@ class ShoppingListsController < ApplicationController
 
   end
 
-  def search
-    render :search
-  end
-
   def edit
     render :edit
-  end
-
-  def show
-    @products = @shopping_list.products.all
-    organize_stores
-    render :show
   end
 
   def update
@@ -48,7 +38,12 @@ class ShoppingListsController < ApplicationController
     else
       render :edit
     end
+  end
 
+  def show
+    @products = @shopping_list.products.all
+    organize_stores
+    render :show
   end
 
   def destroy

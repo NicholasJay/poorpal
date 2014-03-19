@@ -1,6 +1,7 @@
 <div id="user-container">
 
   <h1> <%= @shopping_list.title%> Shopping List </h1>
+  <%= link_to "Change Shopping List Title", edit_user_shopping_list_path(@user.id, @shopping_list.id ) %>
 </div>
 <br />
 
@@ -8,7 +9,7 @@
   <form method="GET" action="products/show" />
     <label for="search_input">Search Products:</label>
     <input type="text" name="search_input" id="search_input_field" />
-    <input type="submit" />
+    <input type="submit" value="Search" id="submit_search"/>
   </form>
 </div>
 

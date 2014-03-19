@@ -14,11 +14,6 @@ class ProductsController < ApplicationController
     render :index
   end
 
-  def sendtext
-    send_text_message
-    render :sendtext
-  end
-
   def new
     send_text_message
   end

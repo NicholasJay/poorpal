@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #326D95;
+  background: white;  
 }
 
 header {
@@ -20,6 +20,7 @@ header {
   margin-top: 2px;
   padding-bottom: 8px;
 }
+
 #login a {
   text-decoration: none;
 }
@@ -72,7 +73,7 @@ header {
 
 #splashpage {
   width: 60em;
-  margin: 0 auto;
+  margin: 20px auto;
   box-shadow: inset 0px 0px 300px 100px lightgrey;
   border-radius: 20px;
 }
@@ -233,13 +234,12 @@ background-image: linear-gradient(to bottom, #A3B4BA 0%, #498CC7 100%);
 }
 
 #caption {
-  background-color: #326D95;
+  background-color: #FFCB73;
   padding: 1em;
   font-size: 19px;
-  margin-left: -50px;
   font-family: helvetica-light;
   text-align: center;
-  color: white;
+  color:  #04356C;
 }
 #caption ul li{
   list-style-type: none;

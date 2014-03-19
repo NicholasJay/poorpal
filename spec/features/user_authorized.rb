@@ -7,7 +7,7 @@ describe "a user cannot go to another users page" do
    it "redirect the user to the main page" do 
     login(user_two)
     visit user_path(user_one.id)
-    expect(page).to have_content("Sign Up")
+    expect(page).to have_content("Cheap Products")
   end
 
   it "sends user to welcome page when they log out" do 

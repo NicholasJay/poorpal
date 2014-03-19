@@ -5,6 +5,6 @@
   <%= f.text_field :title %><br />
   <%= f.label :date %>
   <%= f.date_field :date %><br />
-  <%= f.submit %>
+  <%= f.submit @shopping_list.id.nil? ? "Create Shopping list" : "Click to Update"%>
   <% end %>
 </fieldset>
