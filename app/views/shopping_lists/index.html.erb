@@ -7,17 +7,19 @@
 <h3><%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %></h3>
 </div>
 
+<div id="user-container">
 <% @shopping_lists.each do |list| %>
 <div class="userpage">
   <ul>
-<li><%= link_to "#{list.title}", user_shopping_list_products_path(@user.id, list.id) %>
+<li><%= link_to "#{list.title}", user_shopping_list_products_path(@user.id, list.id), class:"userbuttons" %>
     <form action="<%= user_shopping_list_path(@user.id, list.id) %>" method="POST" >
       <input type="hidden" name="_method" value="DELETE" />
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
-      <button>Delete</button>
+      <button class="deletebutton">Delete</button>
     </form>
   </li>
   </ul>
 </div>
 <% end %>
+</div>
 

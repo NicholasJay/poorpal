@@ -8,11 +8,11 @@
   <div class="userpage">
     <ul>
     <% if current_user.is_admin? %>
-    <li><%= link_to "View All Users", users_path %></li>
+    <li><%= link_to "View All Users", users_path, :class=>"userbuttons" %></li>
     <% end %>
-    <li><%= link_to "Update Profile Information", edit_user_path %></li>
-    <li><%= link_to "View Shopping Lists", user_shopping_lists_path(@user.id) %></li>
-    <li><%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id) %></li>
+    <li><%= link_to "Update Profile Information", edit_user_path, :class=>"userbuttons" %></li>
+    <li><%= link_to "View Shopping Lists", user_shopping_lists_path(@user.id), :class=>"userbuttons" %></li>
+    <li><%= link_to "Create New Shopping List", new_user_shopping_list_path(@user.id), :class=>"userbuttons" %></li>
   </ul>
   </div>
 </div>
